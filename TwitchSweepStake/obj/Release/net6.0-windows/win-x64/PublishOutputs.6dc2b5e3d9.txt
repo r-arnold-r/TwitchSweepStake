@@ -1,0 +1,8 @@
+D:\LeoPublished\TwitchSweepStake.pdb
+D:\LeoPublished\Music\music.mp3
+D:\LeoPublished\D3DCompiler_47_cor3.dll
+D:\LeoPublished\PenImc_cor3.dll
+D:\LeoPublished\PresentationNative_cor3.dll
+D:\LeoPublished\vcruntime140_cor3.dll
+D:\LeoPublished\wpfgfx_cor3.dll
+D:\LeoPublished\TwitchSweepStake.exe

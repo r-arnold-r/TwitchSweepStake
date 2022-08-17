@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Egyetem\\LeonardoGriffin\\TwitchSweepStake\\TwitchSweepStake\\TwitchSweepStake.csproj": {}
+  },
+  "projects": {
+    "G:\\Egyetem\\LeonardoGriffin\\TwitchSweepStake\\TwitchSweepStake\\TwitchSweepStake.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Egyetem\\LeonardoGriffin\\TwitchSweepStake\\TwitchSweepStake\\TwitchSweepStake.csproj",
+        "projectName": "TwitchSweepStake",
+        "projectPath": "G:\\Egyetem\\LeonardoGriffin\\TwitchSweepStake\\TwitchSweepStake\\TwitchSweepStake.csproj",
+        "packagesPath": "C:\\Users\\Arni\\.nuget\\packages\\",
+        "outputPath": "G:\\Egyetem\\LeonardoGriffin\\TwitchSweepStake\\TwitchSweepStake\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Arni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "TwitchLib": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "WeightedRandomizer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "WpfAnimatedGif": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

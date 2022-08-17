@@ -1,0 +1,146 @@
+﻿<Window x:Class="TwitchSweepStake.WinnerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:TwitchSweepStake"
+        WindowStyle="None"
+        mc:Ignorable="d" Height="720" Width="1280" ResizeMode="NoResize"
+        Title="WinnerWindow" MouseDown="Window_MouseDown" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <FontFamily x:Key="bender" >/Fonts/#bender</FontFamily>
+    </Window.Resources>
+
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/eft_bg4.jpg"/>
+    </Window.Background>
+
+    <Grid>
+        <Canvas x:Name="cropCanvas"
+        Grid.Row="0"
+        Grid.RowSpan="2"
+        Grid.Column="0"
+        Grid.ColumnSpan="3">
+
+            <Ellipse 
+                 x:Name="crop1"
+                Canvas.Left="251" Canvas.Top="86" Height="255" Width="353">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Images/crop1.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+
+
+            <Ellipse 
+                 x:Name="crop2"
+                Canvas.Left="937" Canvas.Top="455" Height="255" Width="353">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Images/crop2.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Ellipse 
+                 x:Name="crop3"
+                Canvas.Left="91" Canvas.Top="455" Height="255" Width="352">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Images/crop3.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </Canvas>
+
+
+        <Canvas x:Name="OptionsCanvas"
+        Grid.Row="0"
+        Grid.RowSpan="2"
+        Grid.Column="0"
+        Grid.ColumnSpan="3">
+
+            <Ellipse 
+            x:Name="close_img" 
+            Width="24" 
+            Height="24" 
+            Stroke="White"
+            Canvas.Top="16"
+            Canvas.Right="16" MouseDown="close_img_MouseDown">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Images/cancel_button.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Image 
+                x:Name="sound_img"
+                Source="/Images/volume_up.png" 
+                Width="24" 
+                Height="24"
+                Canvas.Top="16"
+                Canvas.Right="50" MouseDown="sound_img_MouseDown"
+             />
+        </Canvas>
+        <Canvas x:Name="MainCanvas"
+        Grid.Row="0"
+        Grid.RowSpan="2"
+        Grid.Column="0"
+        Grid.ColumnSpan="3">
+            <Grid Width="{Binding ActualWidth, ElementName=MainCanvas}" 
+                      Height="{Binding ActualHeight, ElementName=MainCanvas}">
+
+
+                <Canvas
+                x:Name="CanvasMiddle"
+                    Width="700"
+                    Height="300"                       
+                HorizontalAlignment="Center"
+                        
+                VerticalAlignment="Center">
+                    <Canvas.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="#02F1AAAA" Offset="1"/>
+                            <GradientStop Color="#AB503838" Offset="0.022"/>
+                        </LinearGradientBrush>
+                    </Canvas.Background>
+                    <Grid Width="{Binding ActualWidth, ElementName=CanvasMiddle}" 
+                      Height="{Binding ActualHeight, ElementName=CanvasMiddle}">
+                        <Label
+                    Name="gratulalok"
+                    Content="Gratulálok!"
+                                      HorizontalAlignment="Center"
+        
+                    TextElement.FontFamily="{StaticResource bender}"
+                    TextElement.FontSize="80"
+                    TextElement.FontWeight="Bold"
+                    TextElement.Foreground="White" Canvas.Left="219"/>
+                        <Label
+                        x:Name="winner_name"
+                        Content="LeonardoGriffin"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        TextElement.FontFamily="{StaticResource bender}"
+                        TextElement.FontSize="70"
+                        TextElement.FontWeight="Bold"
+                        TextElement.Foreground="White">
+                            <Label.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#02000000" Offset="0"/>
+                                    <GradientStop Color="White" Offset="1"/>
+                                    <GradientStop Color="#FF933232" Offset="0.404"/>
+                                    <GradientStop Color="#FF1A0808" Offset="0.16"/>
+                                    <GradientStop Color="#FF010000" Offset="0.908"/>
+                                </LinearGradientBrush>
+                            </Label.Background>
+                        </Label>
+                    </Grid>
+                </Canvas>
+
+            </Grid>
+        </Canvas>
+
+
+
+    </Grid>
+
+
+
+</Window>

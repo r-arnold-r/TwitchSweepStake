@@ -1,0 +1,8 @@
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\TwitchSweepStake.pdb
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\Music\music.mp3
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\D3DCompiler_47_cor3.dll
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\PenImc_cor3.dll
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\PresentationNative_cor3.dll
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\vcruntime140_cor3.dll
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\wpfgfx_cor3.dll
+D:\LeonardoGriffin\TwitchSweepStake\TwitchSweepStake\bin\publish\TwitchSweepStake.exe

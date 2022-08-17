@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>WinExe</OutputType>
+	  <TargetFramework>net6.0-windows</TargetFramework>
+      <Nullable>enable</Nullable>
+      <UseWPF>true</UseWPF>
+      <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\bender.otf" />
+    <None Remove="Images\back_arrow.ico" />
+    <None Remove="Images\cancel_button.png" />
+    <None Remove="Images\crop1.PNG" />
+    <None Remove="Images\crop2.PNG" />
+    <None Remove="Images\crop3.PNG" />
+    <None Remove="Images\eft_bg2.png" />
+    <None Remove="Images\eft_bg3.jpg" />
+    <None Remove="Images\eft_bg4.jpg" />
+    <None Remove="Images\loading.gif" />
+    <None Remove="Images\volume_mute.png" />
+    <None Remove="Images\volume_up.png" />
+    <None Remove="Music\music.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\bender.otf" />
+    <Resource Include="Images\back_arrow.ico" />
+    <Resource Include="Images\cancel_button.png" />
+    <Resource Include="Images\crop1.PNG" />
+    <Resource Include="Images\crop2.PNG" />
+    <Resource Include="Images\crop3.PNG" />
+    <Resource Include="Images\eft_bg1.jpg" />
+    <Resource Include="Images\eft_bg2.png" />
+    <Resource Include="Images\eft_bg3.jpg" />
+    <Resource Include="Images\eft_bg4.jpg" />
+    <Resource Include="Images\loading.gif" />
+    <Resource Include="Images\volume_mute.png" />
+    <Resource Include="Images\volume_up.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Music\music.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TwitchLib" Version="3.3.0" />
+    <PackageReference Include="WeightedRandomizer" Version="2.0.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TwitchResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TwitchResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TwitchResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TwitchResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="TwitchSweepStake.UsernameListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TwitchSweepStake"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <FontFamily x:Key="bender" >/Fonts/#bender</FontFamily>
+    </UserControl.Resources>
+
+    <Grid Background="#4C303030">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <Label
+                Name="username"
+                Content="LeonardoGriffin"
+                TextElement.FontFamily="{StaticResource bender}"
+                TextElement.FontSize="20"
+                TextElement.Foreground="White" Grid.RowSpan="2" Margin="14,11,0,-2" 
+            Height="51"
+            Width="286">
+        </Label>
+    </Grid>
+</UserControl>
